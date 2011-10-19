@@ -31,7 +31,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
             switch(LOWORD(wParam))
             {
                 case FILE_TESTBUTTON:
-                    MessageBox(hwnd,"You pressed the \"Test\" button, well done! the game.","Message Box",MB_OK);
+                    MessageBox(hwnd,"You pressed the \"Test\" button, God Damn it NETBEANZ! the game.","Message Box",MB_OK);
                     break;
                 case FILE_EXIT:
                     PostMessage(hwnd,WM_CLOSE,0,0);
@@ -41,7 +41,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
                     physicsFlashWindow(hwnd);
                     break;
                 case FILE_OPEN:
-                    OPENFILENAME ofn;
+                    //OPENFILENAME ofn;
 
                     break;
                 default:

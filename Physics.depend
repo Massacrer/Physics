@@ -33,3 +33,23 @@
 1319012446 source:c:\users\william\workspace (cb)\physics\small_functions.cpp
 	"includes.h"
 
+1319040501 source:c:\users\josh\physics_environment\main.cpp
+	"includes.h"
+
+1319040501 c:\users\josh\physics_environment\includes.h
+	<windows.h>
+	<string>
+	<commdlg.h>
+	"control_ids.h"
+
+1319040501 c:\users\josh\physics_environment\control_ids.h
+
+1319040501 source:c:\users\josh\physics_environment\mainmenu.cpp
+	"includes.h"
+
+1319040689 source:c:\users\josh\physics_environment\wndproc.cpp
+	"includes.h"
+
+1319040502 source:c:\users\josh\physics_environment\small_functions.cpp
+	"includes.h"
+
