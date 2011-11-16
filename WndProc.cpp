@@ -41,10 +41,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
                     physicsFlashWindow(hwnd);
                     break;
                 case FILE_OPEN:
-                    //OPENFILENAME ofn;
+                    RECT r;
+                    GetClientRect(hwnd,&r);
 
-                    break;
-                default:
+                    const char* msg = strToChars("Width: " + intToString(r.right) + ", " + "height: " + intToString(r.bottom));
+                    MessageBox(hwnd,msg,"size",MB_OK);
                     break;
             }
             return 0;

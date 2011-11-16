@@ -11,6 +11,8 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 	WNDCLASSEX  windowClass;		//window class
 	MSG			msg;				//message
 	bool		done;				//flag saying when app is complete
+    HDC hDC;
+    HGLRC hRC;
 	/*	Fill out the window class structure*/
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -31,7 +33,7 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 	hwnd_main = CreateWindowEx(NULL,		//extended style
 		"physicsMainWindowClass",			//class name
 		"Environment-42",		//app name
-		WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_SYSMENU | WS_BORDER | WS_MAXIMIZE, //window style
+		WS_OVERLAPPEDWINDOW | WS_VISIBLE | WS_SYSMENU | WS_BORDER | WS_MAXIMIZE | CS_OWNDC, //window style
 		CW_USEDEFAULT,CW_USEDEFAULT,			//x/y coords
 		CW_USEDEFAULT,CW_USEDEFAULT,			//width,height
 		NULL,				//handle to parent
@@ -41,6 +43,9 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 	/*	Check if window creation failed*/
 	if (!hwnd_main)
 		return 0;
+
+    EnableOpenGL(hwnd_main, &hDC, &hRC);
+
 	done = false; //initialize loop condition variable
 	/*	main message loop*/
 	while(!done)
@@ -56,6 +61,10 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 			TranslateMessage(&msg);
 			DispatchMessage(&msg);
 		}
+
+		openGlRenderScene();
+
 	}
+	DisableOpenGL(hwnd_main, hDC, hRC);
 	return msg.wParam;
 }

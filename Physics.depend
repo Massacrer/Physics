@@ -5,24 +5,26 @@
 1193994932 c:\users\william\workspace (cb)\physics\resource.h
 	<windows.h>
 
-1319012759 source:c:\users\william\workspace (cb)\physics\main.cpp
+1321483627 source:c:\users\william\workspace (cb)\physics\main.cpp
 	"includes.h"
 
 1318255645 c:\users\william\workspace (cb)\physics\variables.h
 
-1319041836 source:c:\users\william\workspace (cb)\physics\wndproc.cpp
+1321483240 source:c:\users\william\workspace (cb)\physics\wndproc.cpp
 	"includes.h"
 
-1319036129 c:\users\william\workspace (cb)\physics\includes.h
+1321480349 c:\users\william\workspace (cb)\physics\includes.h
 	<windows.h>
 	<string>
+	<sstream>
+	<gl/gl.h>
 	<commdlg.h>
 	"control_ids.h"
 
-1319013463 source:c:\users\william\workspace (cb)\physics\mainmenu.cpp
+1319009863 source:c:\users\william\workspace (cb)\physics\mainmenu.cpp
 	"includes.h"
 
-1319013754 c:\users\william\workspace (cb)\physics\control_ids.h
+1320915657 c:\users\william\workspace (cb)\physics\control_ids.h
 
 1318975648 source:c:\users\william\workspace (cb)\physics\randomcrap.cpp
 	"includes.h"
@@ -30,7 +32,7 @@
 1319011763 source:c:\users\william\workspace (cb)\physics\taskbar_flash.cpp
 	"includes.h"
 
-1319012446 source:c:\users\william\workspace (cb)\physics\small_functions.cpp
+1321480344 source:c:\users\william\workspace (cb)\physics\small_functions.cpp
 	"includes.h"
 
 1319040501 source:c:\users\josh\physics_environment\main.cpp
