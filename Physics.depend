@@ -5,21 +5,23 @@
 1193994932 c:\users\william\workspace (cb)\physics\resource.h
 	<windows.h>
 
-1321483627 source:c:\users\william\workspace (cb)\physics\main.cpp
+1322088879 source:c:\users\william\workspace (cb)\physics\main.cpp
 	"includes.h"
+	"globals.h"
 
 1318255645 c:\users\william\workspace (cb)\physics\variables.h
 
 1321483240 source:c:\users\william\workspace (cb)\physics\wndproc.cpp
 	"includes.h"
 
-1321480349 c:\users\william\workspace (cb)\physics\includes.h
+1322089744 c:\users\william\workspace (cb)\physics\includes.h
 	<windows.h>
 	<string>
 	<sstream>
 	<gl/gl.h>
 	<commdlg.h>
 	"control_ids.h"
+	<vector>
 
 1319009863 source:c:\users\william\workspace (cb)\physics\mainmenu.cpp
 	"includes.h"
@@ -32,7 +34,7 @@
 1319011763 source:c:\users\william\workspace (cb)\physics\taskbar_flash.cpp
 	"includes.h"
 
-1321480344 source:c:\users\william\workspace (cb)\physics\small_functions.cpp
+1322079693 source:c:\users\william\workspace (cb)\physics\small_functions.cpp
 	"includes.h"
 
 1319040501 source:c:\users\josh\physics_environment\main.cpp
@@ -53,5 +55,16 @@
 	"includes.h"
 
 1319040502 source:c:\users\josh\physics_environment\small_functions.cpp
+	"includes.h"
+
+1322080488 source:c:\users\william\workspace (cb)\physics\opengl_stuff.cpp
+	"includes.h"
+
+1322080672 c:\users\william\workspace (cb)\physics\globals.h
+
+1322087730 source:c:\users\william\workspace (cb)\physics\shapes.cpp
+	"includes.h"
+
+1322089611 source:c:\users\william\workspace (cb)\physics\glueclass.cpp
 	"includes.h"
 

@@ -1,6 +1,5 @@
 #include "includes.h"
-
-HWND hwnd_main;
+#include "globals.h"
 
 /*	Main function*/
 INT APIENTRY WinMain(HINSTANCE hInstance,
@@ -11,8 +10,9 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 	WNDCLASSEX  windowClass;		//window class
 	MSG			msg;				//message
 	bool		done;				//flag saying when app is complete
-    HDC hDC;
-    HGLRC hRC;
+
+    referenceHolder refs;
+
 	/*	Fill out the window class structure*/
 	windowClass.cbSize = sizeof(WNDCLASSEX);
 	windowClass.style = CS_HREDRAW | CS_VREDRAW;
@@ -44,7 +44,7 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 	if (!hwnd_main)
 		return 0;
 
-    EnableOpenGL(hwnd_main, &hDC, &hRC);
+    EnableOpenGL(hwnd_main, &hdc_main, &hRC);
 
 	done = false; //initialize loop condition variable
 	/*	main message loop*/
@@ -65,6 +65,6 @@ INT APIENTRY WinMain(HINSTANCE hInstance,
 		openGlRenderScene();
 
 	}
-	DisableOpenGL(hwnd_main, hDC, hRC);
+	DisableOpenGL(hwnd_main, hdc_main, hRC);
 	return msg.wParam;
 }

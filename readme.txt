@@ -1,0 +1,1 @@
+Small project between me and a friend to make some form of physics animation / simulation program in C++

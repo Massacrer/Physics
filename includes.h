@@ -11,6 +11,7 @@
 #include <gl/gl.h>
 #include <commdlg.h>
 #include "control_ids.h"
+#include <vector>
 using namespace std;
 
 //Function prototypes time!
@@ -22,7 +23,11 @@ void EnableOpenGL(HWND hwnd, HDC*, HGLRC*);
 void DisableOpenGL(HWND, HDC, HGLRC);
 std::string intToString(int i);
 const char* strToChars(std::string str);
-openGlRenderScene();
+void openGlRenderScene();
 //End function prototypes
+
+extern HWND hwnd_main;
+extern HDC hdc_main;
+extern HGLRC hRC;
 
 #endif // INCLUDES_H_INCLUDED
