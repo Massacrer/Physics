@@ -37,6 +37,7 @@
 			<Add library="kernel32" />
 			<Add library="opengl32" />
 			<Add library="glu32" />
+			<Add library="comctl32" />
 		</Linker>
 		<Unit filename="WndProc.cpp" />
 		<Unit filename="control_ids.h" />

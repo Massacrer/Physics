@@ -2,7 +2,7 @@
 
 class referenceHolder {
     public:
-        HWND hWND;
-        HDC hDC;
-        HGLRC hGLRC;
+        static HWND hWND;
+        static HDC hDC;
+        static HGLRC hGLRC;
 };

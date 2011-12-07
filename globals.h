@@ -1,8 +1,8 @@
 #ifndef GLOBALS_H_INCLUDED
 #define GLOBALS_H_INCLUDED
 
-HWND hwnd_main;
-HDC hdc_main;
+HWND hWND;
+HDC hDC;
 HGLRC hRC;
 
 #endif // GLOBALS_H_INCLUDED

@@ -41,12 +41,22 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
                     physicsFlashWindow(hwnd);
                     break;
                 case FILE_OPEN:
+                {
+
                     RECT r;
                     GetClientRect(hwnd,&r);
 
                     const char* msg = strToChars("Width: " + intToString(r.right) + ", " + "height: " + intToString(r.bottom));
                     MessageBox(hwnd,msg,"size",MB_OK);
                     break;
+                }
+                case MENU_TEST:
+                {
+                    int* nArgs;
+                    const char* msg = strToChars(CommandLineToArgvW(NULL,nArgs));
+                    MessageBox(hwnd,msg,"path",MB_OK);
+                    break;
+                }
             }
             return 0;
             break;
